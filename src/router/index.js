@@ -6,7 +6,8 @@ const routes = [
     { path: '/brazil', name: 'Brazil', component: ()=>import('@/views/Brazil.vue')},
     { path: '/jamaica', name: 'Jamaica', component: () => import('@/views/Jamaica.vue') },
     { path: '/panama', name: 'Panama', component: () => import('@/views/Panama.vue') },
-    { path: '/hawaii', name: 'Hawaii', component: () => import('@/views/Hawaii.vue') }
+    { path: '/hawaii', name: 'Hawaii', component: () => import('@/views/Hawaii.vue') },
+    { path: '/destination/:id', component: () => import('@/views/DestinationShow.vue')}
 ]
 
 const router = createRouter({
@@ -15,3 +16,8 @@ const router = createRouter({
 })
 
 export default router
+
+
+//linkActiveClass : Sirve para crear efectos de acciones cuando este activa esa opcion.
+
+// linkActiveClass: 'Nombre de la active class'
